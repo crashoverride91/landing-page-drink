@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#"class="pointcolor">Home</a></li>
+                <li><a href="#" class="pointcolor">Products</a></li>
+                <li><a href="#" class="pointcolor">What's new</a></li>
+                <li><a href="#" class="pointcolor">Newsletter</a></li>
+                <li><a href="#"class="pointcolor">Contacts</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's what <br><span>I like</span></h2>
+                <p>Aenean blandit eros non orci interdum, in consequat nisl ultricies. Donec vel metus dapibus, rutrum turpis nec, aliquet diam. Fusce neque lorem, egestas eget consequat ut, imperdiet nec nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed nec ex neque. Proin a tincidunt magna. Cras ac tempor orci.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="coca01.png" class="coca">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./coca01.png" onclick="imgSlider('coca01.png'); changeBgColor('#000000')" alt="" class=""></li>
+            <li><img src="./coca02.png" onclick="imgSlider('coca02.png');changeBgColor('#FF2020')"alt="" class="thumbimg"></li>
+            <li><img src="./coca03.png" onclick="imgSlider('coca03.png');changeBgColor('#C1D5D5')"alt=""></li>
+        </ul>
+        <ol class="sci">
+            <li><a href="#"><img src="facebook.png" alt="" class="icon"></a></li>
+            <li><a href="#"><img src="twitter.ico" alt=""  class="icon"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="" class="icon"></a></li>
+
+        </ol>
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlider(anything){
+
+            document.querySelector('.coca').src = anything;
+        }
+
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color; 
+        }
+
+    </script>
+</body>
+</html>
